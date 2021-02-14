@@ -6,12 +6,17 @@
     box-sizing: border-box;
     font-family: 'Hammersmith One', sans-serif;
 }
+html{
+    background: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header{
     text-align: center;
 }
 
 .wrapper{
-    background: chartreuse;
+    /* background: chartreuse; */
     height: 96vh;
 }
 
@@ -23,21 +28,24 @@ header{
 }
 
 .default__style{
-    background-color:red;
-    border: white solid 3px;
+    background-color:rgba(0, 0, 0, 0.596);
+    border: #7553A6 solid 3px;
     border-radius: 9px;
     padding: 40px;
     height: 400px;
     width: 400px;
     position: relative;
+    box-shadow: 0px 0px 18px 8px rgba(148, 46, 231, 0.623);
 }
 
 .label{
-    background-color: teal;
+    background-color: #c98af0;
+    color: black;
+    letter-spacing: 4px;
     padding: 3px;
-    border-top: pink solid 3px;
-    border-left: pink solid 3px;
-    border-right: pink solid 3px;
+    border-top: #7553A6 solid 3px;
+    border-left: #7553A6 solid 3px;
+    border-right: #7553A6 solid 3px;
     border-radius: 6px 6px 0px 0px;
     font-size: 20px;
     position: absolute;
@@ -46,16 +54,44 @@ header{
 }
 
 .container__default{
-    background-color: teal;
+    background-color: #4946a675;
     height: 100%;
     width: 100%;
-    border: pink solid 3px;
+    border: #7553A6 solid 3px;
     display: flex;
     padding: 10px;
 }
 
 .default__items{
-    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2C9F2;
+    font-size: 20px;
     height: 40px;
     width: 40px;
+}
+/* ----------------problems---------- */
+.sample__container_1{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sample__container_2{
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.sample__container_3{
+ justify-content: space-between;
+ align-items: flex-end;
+ flex-direction: column-reverse;
+}
+
+.sample__container_4{
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: center;
 }
